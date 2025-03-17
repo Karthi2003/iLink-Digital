@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Openings - iLink Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="navbar">
+      <a href="#"><img src="ilinklogo.jpg" alt="iLink Logo" class="logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Job Listings Section -->
+  <section class="job-listings">
+    <h2>Current Job Openings</h2>
+    <div class="job-card">
+      <h3>Software Engineer</h3>
+      <p><strong>Location:</strong> Seattle, WA</p>
+      <button onclick="applyForJob('Software Engineer')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <h3>Data Analyst</h3>
+      <p><strong>Location:</strong> Remote</p>
+      <button onclick="applyForJob('Data Analyst')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <h3>UI/UX Designer</h3>
+      <p><strong>Location:</strong> Dallas, TX</p>
+      <button onclick="applyForJob('UI/UX Designer')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <h3>Project Manager</h3>
+      <p><strong>Location:</strong> New York, NY</p>
+      <button onclick="applyForJob('Project Manager')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <h3>DevOps Engineer</h3>
+      <p><strong>Location:</strong> San Francisco, CA</p>
+      <button onclick="applyForJob('DevOps Engineer')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <h3>Business Analyst</h3>
+      <p><strong>Location:</strong> Chicago, IL</p>
+      <button onclick="applyForJob('Business Analyst')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <h3>Cloud Architect</h3>
+      <p><strong>Location:</strong> Austin, TX</p>
+      <button onclick="applyForJob('Cloud Architect')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <h3>QA Engineer</h3>
+      <p><strong>Location:</strong> Boston, MA</p>
+      <button onclick="applyForJob('QA Engineer')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <h3>Marketing Specialist</h3>
+      <p><strong>Location:</strong> Los Angeles, CA</p>
+      <button onclick="applyForJob('Marketing Specialist')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <h3>Technical Writer</h3>
+      <p><strong>Location:</strong> Remote</p>
+      <button onclick="applyForJob('Technical Writer')">Apply Now</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 iLink Digital. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function applyForJob(jobTitle) {
+      const email = "careers@ilink-digital.com";
+      const subject = `Application for ${jobTitle}`;
+      const body = `Dear Hiring Team,\n\nI am interested in applying for the ${jobTitle} position at iLink Digital.\n\nBest regards,\n[Your Name]`;
+      window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+  </script>
+</body>
+</html>
